@@ -1,0 +1,8 @@
+graph LR
+    A[VS Code: Open Project] --> B(Initialize Git: git init);
+    B --> C{Source Control};
+    C -->|Stage Changes| D[git add .];
+    D -->|Commit| E[git commit -m 'message'];
+    E -->|Add Remote| F[git remote add origin URL];
+    F -->|Push| G[git push -u origin main];
+    G --> H[GitHub Repository];
